@@ -1,0 +1,90 @@
+html{
+    height: 100%;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+}
+
+.box-login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.box-login h1 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+
+}
+
+.box-login .user-box input{
+    width: 100%;
+    padding: 10px 0 ;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background-color: transparent;
+}
+.box-login .user-box label{
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+.box-login .user-box{
+    position: relative;
+}
+.box-login .user-box input:focus ~ label,
+.box-login .user-box input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+.box-login form #submit{
+ 
+    background: wheat;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.box-login form #submit:hover{
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+
+}
